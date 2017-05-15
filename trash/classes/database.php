@@ -30,7 +30,7 @@
                            $this->showError("Unable to connect to server");
 
                         if(!mysqli_select_db($this->db_link,$DBase))
-                           $this->showError("Unable to open database" .. $this->describeError());
+                           $this->showError("Unable to open database" . $this->describeError());
                 }
                 
                 function showError ( $StrErr ) {
